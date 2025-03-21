@@ -18,25 +18,61 @@
 
 <body>
     <div class="uk-section">
-        <div class="uk-container uk-container-small">
+        <div class="uk-container uk-container-xsmall">
             <!-- https://unsplash.com/photos/complex-concrete-architecture-with-geometric-shapes-zGs3Ptid1Sc -->
-            <h1>Hej, jestem Jan</h1>
-            <p>i jestem trenerem personalnym piłki noznej dla dzieci. Działam na terenie Poznania.</p>
+            <h2 class="uk-animation-slide-left-small">Jestem trenerem personalnym piłki noznej dla dzieci</h2>
+            <p class="uk-text-muted">Nazywan się Janek i działam na terenie Poznania.</p>
             <div style="border-radius: 30px;"
-                class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-animation-fade uk-background-cover uk-light"
                 data-src="main.jpeg" uk-img>
 
             </div>
         </div>
-        <div class="uk-container uk-container-small">
+        <div class="uk-container uk-container-xsmall">
 
             <div class="uk-flex uk-flex-center uk-margin-large-top">
                 <a style="border-radius: 10px;" class="uk-button uk-button-secondary" href=""
                     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tobiasz-gleba24/30min'});return false;">Umów
-                    się na trening</a>
+                    się na pierwszy darmowy trening</a>
             </div>
+            <h3>Potrenujmy...</h3>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Motorykę</dt>
+                <dd>Rozwiniesz swoją siłę, szybkość, wytrzymałość oraz zwinność, co pozwoli Ci osiągnąć lepsze wyniki na
+                    boisku.</dd>
+            </dl>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Gimnastykę</dt>
+                <dd>Poprawisz swoją elastyczność, koordynację ruchową oraz wzmocnisz mięśnie poprzez różnorodne
+                    ćwiczenia gimnastyczne.</dd>
+            </dl>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Taktykę</dt>
+                <dd>Nauczysz się lepszego rozumienia gry, podejmowania szybkich decyzji oraz efektywnego ustawiania się
+                    na boisku.</dd>
+            </dl>
 
+            <div class="uk-container-xsmal uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                uk-slideshow="animation: pull">
 
+                <div style="border-radius: 10px;" class="uk-slideshow-items">
+                    <div>
+                        <img src="photo1.jpeg" alt="" uk-cover>
+                    </div>
+                    <div>
+                        <img src="photo2.jpeg" alt="" uk-cover>
+                    </div>
+                    <div>
+                        <img src="photo3.jpeg" alt="" uk-cover>
+                    </div>
+                </div>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+
+            </div>
         </div>
     </div>
     </div>
